@@ -1,0 +1,35 @@
+.publication {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .publication-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .publication-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .publication-members {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .publication-technology {
+    font-size: 14px;
+  }
+  
+  .publication-year {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

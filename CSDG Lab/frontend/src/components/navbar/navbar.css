@@ -1,0 +1,133 @@
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for navigation links */
+.navbar-right a {
+    text-decoration: none;
+    color: #ddd;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 10px;
+    transform: scale(1); /* default size */
+    transition: transform 0.3s ease; /* transition effect */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for navigation links */
+.navbar-right a:hover {
+    background-color: #555;
+    color: #ff6f1c;
+    text-decoration: none; /* This removes the underline on hover */
+    transform: scale(1.1); /* slightly enlarged size */
+}
+
+
+.navbar-right a span::before, .navbar-right a span::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    background: #e6abab; /* Color of the underline */
+    transition: all 0.3s;
+}
+
+.navbar-right a span::before {
+    left: 50%;
+}
+
+.navbar-right a span::after {
+    right: 50%;
+}
+
+.navbar-right a:hover span::before, .navbar-right a:hover span::after {
+    width: 50%;
+}
+
+/* Style for the search input */
+.navbar-right input[type="search"] {
+    margin-left: 10px;
+    background-color: #808080; /* Gray shade */
+    color: #fff; /* Text color */
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: width 0.3s ease-in-out, box-shadow 0.6s; /* Added transition for width */
+    width: 150px; /* Default width */
+}
+
+
+
+.navbar-right input[type="search"]::placeholder {
+    color: #fff; /* Placeholder color set to white */
+    opacity: 0.7; /* Slightly reduce opacity for a more subtle appearance */
+}
+
+/* Expand search input on focus */
+.navbar-right input[type="search"]:focus {
+    box-shadow: 0 0 10px #D4AF37;
+    width: 250px; /* Width after expansion */
+}
+
+
+.navbar-left {
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar-left:hover {
+    transform: scale(1.05); /* Increase size slightly when hovered */
+}
+
+
+.navbar-left a {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-left span {
+    font-size: 24px;
+    color: #ff6f1c;
+    font-weight: bold;
+}
+
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Styling for the CSG logo */
+.logo-csg {
+    width: 200px; 
+    height: auto;
+}
+
+/* Styling for the IIT logo */
+.logo-iit {
+    width: 200px; 
+    height: auto; 
+    margin-left: 20px; 
+}
+
+
+.logos-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+    align-items: center;
+}
+
+
