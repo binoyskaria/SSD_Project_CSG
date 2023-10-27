@@ -1,6 +1,95 @@
-/* Projects.css */
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.project-layout {
+  display: flex;
+  animation: fadeIn 0.5s;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+
+.project-container {
+  
+  transition: all 0.5s;
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.5s;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+.project-container h1,
+.project-container h2,
+.project-container h3,
+.project-container h4,
+.project-container h5,
+.project-container h6 {
+  color: #d25208; 
+}
+
+.project-display.active  h1,
+.project-display.active  h2,
+.project-display.active  h3,
+.project-display.active  h4,
+.project-display.active  h5,
+.project-display.active  h6 {
+  color: #d25208;
+}
+
+
+
+.project-display.active {
+  flex: 3;
+  margin-left: 30px;
+ 
+  position: sticky;
+  top: 0;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  transition: flex 0.9s;
+  animation: fadeIn 0.5s;
+  border-radius: 15px;
+  padding: 150px;
+  
+  font-size: 20px; 
+  line-height: 1.5; 
+  
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  background-color:white;
+}
+
+
+.project-container.shrink {
+  flex: 1;
+  width: 50%;
+  transition: flex 0.5s;
+  animation: fadeIn 0.5s;
+  
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+    
+  }
+}
+
+
+.project-layout,
+.project-container,
+.project-display
+.project-container.shrink
+.project-display.active {
+  animation: fadeIn 0.9s;
 }

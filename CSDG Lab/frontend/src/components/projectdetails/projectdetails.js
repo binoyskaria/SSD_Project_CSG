@@ -5,7 +5,7 @@ const ProjectDetails = ({ title, detail, funding, duration, summary }) => {
     return (
         <div className="project">
             <div className="project-heading">
-                <h2>{title}</h2>
+                <h4>{title}</h4>
             </div>
             <div className="project-detail">
                 <p>{detail}</p>
@@ -13,7 +13,7 @@ const ProjectDetails = ({ title, detail, funding, duration, summary }) => {
                 <p>{duration}</p>
             </div>
             <div className="summary">
-                <h3>Summary</h3>
+                {/* <h3>Summary</h3> */}
                 <p>{summary}</p>
             </div>
         </div>
