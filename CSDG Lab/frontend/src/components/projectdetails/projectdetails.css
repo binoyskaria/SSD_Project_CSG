@@ -10,7 +10,7 @@
 }
 .project:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
-    transform: scale(1.009); /* Slight zoom-in effect on hover */
+    transform: scale(1.06); 
 }
 
 .project-heading {
