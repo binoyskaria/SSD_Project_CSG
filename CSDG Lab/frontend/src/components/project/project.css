@@ -1,9 +1,23 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 .project-layout {
   display: flex;
   animation: fadeIn 0.5s;
   border-radius: 15px;
   padding: 20px;
   background-color: whitesmoke;
+  animation: slideIn 0.5s ease;
+
 }
 
 
@@ -20,6 +34,8 @@
   border-radius: 15px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  animation: slideIn 0.5s ease;
+
 }
 .project-container h1,
 .project-container h2,
@@ -28,6 +44,8 @@
 .project-container h5,
 .project-container h6 {
   color: #d25208; 
+  animation: slideIn 0.5s ease;
+
 }
 
 .project-display.active  h1,
@@ -37,6 +55,8 @@
 .project-display.active  h5,
 .project-display.active  h6 {
   color: #d25208;
+  animation: slideIn 0.5s ease;
+
 }
 
 
@@ -62,6 +82,8 @@
   
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   background-color:white;
+  animation: slideIn 0.5s ease;
+
 }
 
 
@@ -70,6 +92,8 @@
   width: 50%;
   transition: flex 0.5s;
   animation: fadeIn 0.5s;
+  animation: slideIn 0.5s ease;
+
   
 }
 
@@ -92,4 +116,6 @@
 .project-container.shrink
 .project-display.active {
   animation: fadeIn 0.9s;
+  animation: slideIn 0.5s ease;
+
 }
