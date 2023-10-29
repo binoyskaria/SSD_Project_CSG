@@ -1,11 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './event.css';
 
 const Event = () => {
+  const handleDivClick = () => {
+    window.location.href = '/hackathon'; 
+  };
+
   return (
-    <div className="content">
-      <h1 className="hackathon-title"><Link to="/hackathon" className="hackathon-link">Hardware Accelerator Design Hackathon</Link></h1>
+    <div className="content" onClick={handleDivClick} style={{ cursor: 'pointer' }}>
+      <div className="hackathon-title">
+        Hardware Accelerator Design Hackathon
+      </div>
       <p>April 30th to May 4th (Tentatively)</p>
     </div>
   );
