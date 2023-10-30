@@ -1,3 +1,7 @@
+html, body {
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+
+}
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
@@ -17,6 +21,8 @@
   padding: 20px;
   background-color: whitesmoke;
   animation: slideIn 0.5s ease;
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+
 
 }
 
