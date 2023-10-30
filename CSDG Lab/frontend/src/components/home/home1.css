@@ -1,0 +1,62 @@
+/* Container for the whole page */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+/* Main heading style */
+.main-heading {
+  font-family: 'Helvetica', sans-serif;  /* Modern Font */
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Group Image */
+.group-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Sub-sections like About */
+.sub-section {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Sub-heading like ABOUT */
+.sub-heading {
+  font-family: 'Helvetica', sans-serif;  /* Modern Font */
+  font-size: 1.5em;
+  text-align: center;
+  color: #333;
+}
+
+/* Paragraph text */
+p {
+  font-family: 'Arial', sans-serif;  /* Modern Font */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* List items */
+ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+li {
+  font-family: 'Arial', sans-serif;  /* Modern Font */
+  color: #333;
+}

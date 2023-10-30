@@ -1,0 +1,92 @@
+/* Container for the whole page */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+    width: 100%;
+  }
+  
+  /* Make sure to cover the full width and height */
+  html, body, #root, .App {
+    height: 100%;
+    width: 100%;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px; 
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+  }
+  
+  /* Main heading style */
+  .main-heading {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+  }
+  
+  /* Group Image */
+  .group-image {
+    width: 100%;
+    /* max-width: 800px; */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #ccc;
+  }
+  
+  /* Sub-sections like About */
+  .sub-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: justify;
+  }
+  
+  /* Sub-heading like ABOUT */
+  .sub-heading {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph text */
+  p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  /* List items */
+  ul {
+    list-style-type: disc;
+    margin-left: 40px;
+  }
+  
+  li {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  

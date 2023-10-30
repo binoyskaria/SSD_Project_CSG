@@ -1,3 +1,5 @@
+
+  
 .navbar {
     display: flex; 
     justify-content: space-between; 
@@ -130,4 +132,22 @@
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;  /* Center align items */
+    }
+  
+    .navbar-left,
+    .navbar-right {
+      flex-direction: column;
+      align-items: center;  /* Center align items */
+      gap: 10px;
+    }
+  
+    .navbar-right span {
+      margin: 5px 0;
+    }
+  }
+  
 
