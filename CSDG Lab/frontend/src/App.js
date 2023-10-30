@@ -1,5 +1,5 @@
 import React from 'react';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+// import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import Navbar from './components/navbar/navbar'; 
