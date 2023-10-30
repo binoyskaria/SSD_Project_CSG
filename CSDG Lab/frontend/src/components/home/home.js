@@ -16,7 +16,7 @@ const Home = () => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css'; // Use the correct path to your Bootstrap CSS file
+    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css'; 
     link.id = 'bootstrap-css';
     document.head.appendChild(link);
 
